@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="error-page">
+    <h1><i class="fas fa-exclamation-triangle"></i> 404 - Страница не найдена</h1>
+    <p>Запрошенная страница не существует.</p>
+    <a href="{{ url_for('home') }}" class="btn">На главную</a>
+</div>
+{% endblock %}
